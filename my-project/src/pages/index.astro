@@ -1,17 +1,183 @@
 ---
-
+import "../styles/global.css";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <body
+    class="bg-[url('https://images.wallpapersden.com/image/download/kratos-and-atreus-in-god-of-war-ragnarok_bmdlaWuUmZqaraWkpJRobWllrWdma2U.jpg')] bg-cover bg-[center_top] bg-no-repeat bg-fixed min-h-screen text-white
+                 bg-black/60 bg-blend-multiply flex flex-col font-sans"
+  >
+    <!-- <section class="py-6  text-white">
+      <div class="text-center">
+        <h1>Welcome to Astro!</h1>
+        <p class="text-lg">by Songporworn Mahapiyanont</p>
+      </div>
+    </section> -->
+
+    <nav>
+      <div class="flex">
+        <div class="flex items-center gap-5">
+          <ul class="flex mx-7 space-x-4 py-4 font-extrabold text-lg">
+            <li class="hover:text-gray-300"><a href="/home">Home</a></li>
+            <li class="hover:text-gray-300"><a href="/media">Media</a></li>
+          </ul>
+        </div>
+        <div class="items-center flex justify-end gap-10 ml-auto mx-7 my-4">
+          <button class="">
+            <img
+              src="https://placehold.co/60x60"
+              alt="Profile Picture"
+              class="rounded-full"
+            />
+          </button>
+          <button class="">
+            <img
+              src="https://placehold.co/60x60"
+              alt="Profile Picture"
+              class="rounded-full"
+            />
+          </button>
+          <button class="">
+            <img
+              src="https://placehold.co/60x60"
+              alt="Profile Picture"
+              class="rounded-full"
+            />
+          </button>
+          <time id="clock" class="text-xl"></time>
+        </div>
+      </div>
+    </nav>
+
+    <header>
+      <div class="flex gap-10 p-5 items-center flex-wrap justify-center">
+        <img
+          src="https://placehold.co/130x130"
+          alt="Profile Picture"
+          class="rounded-3xl shadow-lghover:scale-[1.08]"
+        />
+        <img
+          src="https://placehold.co/130x130"
+          alt="Profile Picture"
+          class="rounded-3xl shadow-lghover:scale-[1.08]"
+        />
+        <img
+          src="https://placehold.co/130x130"
+          alt="Profile Picture"
+          class="rounded-3xl shadow-lghover:scale-[1.08]"
+        />
+        <img
+          src="https://placehold.co/130x130"
+          alt="Profile Picture"
+          class="rounded-3xl shadow-lghover:scale-[1.08]"
+        />
+        <img
+          src="https://placehold.co/130x130"
+          alt="Profile Picture"
+          class="rounded-3xl shadow-lghover:scale-[1.08]"
+        />
+        <img
+          src="https://placehold.co/130x130"
+          alt="Profile Picture"
+          class="rounded-3xl shadow-lghover:scale-[1.08]"
+        />
+        <img
+          src="https://placehold.co/130x130"
+          alt="Profile Picture"
+          class="rounded-3xl shadow-lghover:scale-[1.08]"
+        />
+        <img
+          src="https://placehold.co/130x130"
+          alt="Profile Picture"
+          class="rounded-3xl shadow-lghover:scale-[1.08]"
+        />
+        <img
+          src="https://placehold.co/130x130"
+          alt="Profile Picture"
+          class="rounded-3xl shadow-lghover:scale-[1.08]"
+        />
+        <img
+          src="https://placehold.co/130x130"
+          alt="Profile Picture"
+          class="rounded-3xl shadow-lghover:scale-[1.08]"
+        />
+      </div>
+    </header>
+
+    <section>
+      <div class="text-left p-5 mx-7 mt-50">
+        <h2 class="text-5xl mb-4">God of war Ragnarok</h2>
+        <p class="text-2xl mb-4">Explore the Realms</p>
+      </div>
+      <div class="flex p-5 mx-7 gap-8 items-center">
+        <button
+          class="h-14 px-20 bg-white text-black rounded-3xl text-2xl hover:bg-gray-200 transition flex items-center justify-center"
+        >
+          <p class="text-black">Play Now</p>
+        </button>
+        <button
+          class="h-14 w-14 bg-white rounded-full text-xl hover:bg-gray-200 transition flex items-center justify-center"
+        >
+          <p class="text-black">...</p>
+        </button>
+        <div
+          class="ml-auto h-14 px-6 bg-white rounded-full
+         flex items-center gap-3
+         shadow-sm hover:shadow-md
+         transition-all duration-300"
+        >
+          <img
+            src="https://placehold.co/30x30"
+            alt="Profile Picture"
+            class="w-8 h-8 rounded-full"
+          />
+          <p class="text-black text-lg font-medium tracking-wide">50 hours</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="flex flex-col min-h-screen">
+      <footer class="text-center p-4 mt-auto">
+        <section class="text-center p-4">
+          <hr class="border-white mx-7" />
+          <h2 class="text-2xl font-bold mb-4">About Me</h2>
+          <p class="max-w-2xl mx-auto">
+            Hello! I'm Songporworn Mahapiyanont, a passionate developer and tech
+            enthusiast. I love creating innovative solutions and exploring new
+            technologies. Welcome to my personal website where I share my
+            projects, ideas, and experiences.
+          </p>
+        </section>
+        <p>&copy; 2024 Songporworn Mahapiyanont. All rights reserved.</p>
+      </footer>
+    </div>
+  </body>
 </html>
+
+<script>
+  function updateTime() {
+    const now = new Date();
+
+    const timeString = now.toLocaleTimeString("th-TH", {
+      hour: "2-digit",
+      minute: "2-digit",
+      second: "2-digit",
+    });
+
+    const clockElement = document.getElementById("clock");
+    if (clockElement) {
+      clockElement.textContent = timeString;
+    }
+  }
+
+  updateTime(); // เรียกครั้งแรก
+  setInterval(updateTime, 1000); // อัปเดตทุก 1 วินาที
+</script>
